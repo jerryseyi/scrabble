@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "laravel-mix": "^6.0.43",
+    "moment": "^2.29.3"
+  }
+}

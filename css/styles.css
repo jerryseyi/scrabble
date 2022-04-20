@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.game-header {
+	position: relative;
+}
+
+.game-header header {
+	background: #363062;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.game-header header p {
+	font-weight: 800;
+	font-size: 2em;
+}
+
+.game-header header p span {
+	font-weight: 500;
+	color: #FF6363;
+}
+
+/*, */
+.game-header .hero {
+	position: relative;
+}
+
+.game-header .hero .img-bx {
+	background: black;
+}
+
+.game-header .hero .img-bx img {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	opacity: 0.3;
+}
+
+.game-header .hero .overlay {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 600px;
+	background: linear-gradient(to right, #363062, #FF6363);
+	mix-blend-mode: overlay;
+}
+
+.game-header .hero .signup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.game-header .hero .timer {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	z-index: 1;
+	color: #fff;
+
+}
+
+.btn {
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	letter-spacing: 5px;
+	text-decoration: none;
+	color: #363062;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.btn:hover {
+	letter-spacing: 8px;
+	-webkit-transition: 0.5s time;
+	-moz-transition: 0.5s time;
+	-ms-transition: 0.5s time;
+	-o-transition: 0.5s time;
+	transition: 0.5s time;
+}
+
+#modalContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: black;
+	/*opacity: 0.95;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+
+#modalContainer.showModal {
+	visibility: visible;
+}
+
+#modalContainer #modal {
+	min-width: 600px;
+}
+
+#modalContainer #modal form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#modalContainer #modal form h3 {
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+#modalContainer #modal form .form-group {
+	width: 80%;
+	margin-bottom: 6px;
+}
+
+#modalContainer #modal form .form-group .form-control {
+	width: 100%;
+	padding: 5px;
+}
+
+.btn.form {
+	padding: 4px;
+	color: #000;
+	font-weight: 400;
+	font-size: 1em;
+	border: none;
+}
+
+.btn.form.close {
+	background: #363062;
+	border: none;
+	color: #fff;
+}
+
+.btn.start {
+	display: none;
+}
+
+.start-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+	position: relative;
+}
+
+.start-main .words {
+	background: #125B50;
+	padding: 5px;
+	color: #fff;
+	font-size: 28px;
+}
+
+.start-main .words-input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.start-main .words-input input {
+	margin-top: 30px;
+	width: 400px;
+	padding: 10px;
+	outline: none;
+}
+
+.btn.words {
+	margin-top: 10px;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.start-main .timer {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: #125B50;
+	color: #fff;
+	padding: 8px;
+}
+
+.start-main .timer.danger {
+	background: #FF6363;
+}
